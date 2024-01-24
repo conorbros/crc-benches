@@ -1,0 +1,22 @@
+[package]
+name = "crc-benches"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+crc24 = "0.1.6"
+crc24-openpgp-fast = "0.1.2"
+crc32-v2 = "0.0.4"
+crc32_light = "0.1.1"
+crc32c = "0.6.4"
+crc32fast = "1.3.2"
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+
+[[bench]]
+name = "bench"
+harness = false
